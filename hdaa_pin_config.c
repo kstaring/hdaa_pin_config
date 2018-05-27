@@ -163,7 +163,7 @@ hdaa_pin_hex_to_string(const uint32_t config, char *str, int buflen)
 
 	// SEQUENCE
 	if ((tmp = config & HDA_CONFIG_DEFAULTCONF_SEQUENCE_MASK)) {
-		part = tmp >> HDA_CONFIG_DEFAULTCONF_ASSOCIATION_SHIFT;
+		part = tmp >> HDA_CONFIG_DEFAULTCONF_SEQUENCE_SHIFT;
 		buf += snprintf(buf, endptr - buf, "seq=%d ", part);
 	}
 
